@@ -13,15 +13,25 @@
 
         public void ShowAviary(int index)
         {
-            _aviarys[index].ShowInfo();
+            if (index >= 0 & index < _aviarys.Count)
+            {
+                _aviarys[index].ShowInfo();
+            }
+            else
+            {
+                Console.WriteLine("Введите номер вольера");
+            }
+
             Console.ReadKey();
         }
 
         public void ShowInfo()
         {
-            foreach (Aviary aviary in _aviarys)
+            Console.WriteLine("{0,12} {1,12}", "Номер вольера", "Название животных");
+
+            for (int i = 0; i < _aviarys.Count; i++)
             {
-                Console.WriteLine($"В вольере находятся {aviary.GetAnimalType()}");
+                Console.WriteLine("{0,12} {1,12}", i + 1, _aviarys[i].GetAnimalType());
             }
         }
 
