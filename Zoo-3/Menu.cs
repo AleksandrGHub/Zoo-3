@@ -25,10 +25,10 @@
 
         private void Show()
         {
-            Console.WriteLine("********************Меню********************");
-            Console.WriteLine($"Для просмотра вольера введите его номер");
+            Console.WriteLine("******************Меню*****************");
+            Console.WriteLine($"Для просмотра вольера введите его номер\n");
             _zoo.ShowInfo();
-            Console.WriteLine($"Выйти из меню, команда: {ExitCommand}");
+            Console.WriteLine($"\nВыйти из меню, команда: {ExitCommand}");
         }
     }
 }

@@ -27,11 +27,11 @@
 
         public void ShowInfo()
         {
-            Console.WriteLine("{0,12} {1,12}", "Номер вольера", "Название животных");
+            Console.WriteLine("{0,13} {1,25}", "Номер вольера", "Название животных");
 
             for (int i = 0; i < _aviarys.Count; i++)
             {
-                Console.WriteLine("{0,12} {1,12}", i + 1, _aviarys[i].GetAnimalType());
+                Console.WriteLine("{0,13} {1,25}", i + 1, _aviarys[i].GetAnimalType());
             }
         }
 
