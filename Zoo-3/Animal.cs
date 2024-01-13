@@ -17,8 +17,8 @@
 
         private string GetGender()
         {
-            string[] gender = new string[] { "Самец", "Самка" };
-            return gender[_random.Next(gender.Length)];
+            string[] genders = new string[] { "Самец", "Самка" };
+            return genders[_random.Next(genders.Length)];
         }
     }
 }

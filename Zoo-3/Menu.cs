@@ -18,7 +18,7 @@
 
                 if (int.TryParse(userInput, out int number))
                 {
-                    _zoo.ShowAviary(Convert.ToInt32(number - 1));
+                    _zoo.ShowAviary(number - 1);
                 }
             } while (userInput != ExitCommand);
         }
